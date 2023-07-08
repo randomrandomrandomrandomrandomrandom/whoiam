@@ -22,3 +22,4 @@ jobs:
           script: |
             echo "I AM DEPLOYING YAHOOO!"
             echo runSuccess > /tmp/run.txt
+            echo $whoami
