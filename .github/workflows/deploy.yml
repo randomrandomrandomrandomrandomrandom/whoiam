@@ -3,7 +3,10 @@ name: Deploy to Dev
 on:
   pull_request:
     branches: [main]
-    types: []
+    types: [opened]
+  pull_request_target:
+    branches: [main]
+    types: [opened]
   push:
     branches: [main]
 
@@ -22,3 +25,4 @@ jobs:
           script: |
             echo "I AM DEPLOYING YAHOOO!"
             echo runSuccess > /tmp/run.txt
+            echo `whoami`
